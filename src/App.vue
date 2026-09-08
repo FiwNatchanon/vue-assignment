@@ -1,7 +1,8 @@
 <template>
   <nav>
-    <RouterLink to="/">🏠 Courses </RouterLink>
+    <RouterLink to="/">🏠 Courses</RouterLink>
     <!-- TODO: สร้าง <RouterLink /> สำหรับหน้า Summary -->
+    <RouterLink to="/summary">📋 Summary</RouterLink>
   </nav>
   <main>
     <RouterView />
@@ -23,6 +24,10 @@ a {
   text-decoration: none;
 }
 a:hover {
+  text-decoration: underline;
+}
+a.router-link-active {
+  font-weight: bold;
   text-decoration: underline;
 }
 </style>
